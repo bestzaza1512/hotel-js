@@ -1,0 +1,41 @@
+/* เปลี่ยนสีพื้นหลังของ Sidebar */
+#sidebar {
+    background-color: #d9e4f2;
+    width: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ปรับขนาดข้อความและสีข้อความของลิงค์ */
+  .nav {
+    color: #333; /* สีข้อความ */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    padding: 10px 20px; /* ระยะห่างขอบลิงค์ */
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.2s; /* อนิเมชันเมื่อมีการ hover บนลิงค์ */
+  }
+  
+  /* ปรับสีพื้นหลังของลิงค์เมื่อมีการ hover */
+  .nav:hover {
+    background-color: #007bff; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเมื่อ hover */
+  }
+
+  .navv:hover {
+    background-color: #ff0000; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเมื่อ hover */
+  }
+  
+  .navv {
+    color: #333; /* สีข้อความ */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    padding: 10px 20px; /* ระยะห่างขอบลิงค์ */
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.2s; /* อนิเมชันเมื่อมีการ hover บนลิงค์ */
+  }

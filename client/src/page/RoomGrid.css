@@ -1,0 +1,41 @@
+.room-manage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* แบ่งแถวเป็น 4 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างแต่ละห้อง */
+  margin: 20px;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.room.occupied {
+  background-color: #ff9999; /* สีสำหรับห้องที่ใช้งาน */
+}
+
+.room.available {
+  background-color: #99ff99; /* สีสำหรับห้องที่ว่าง */
+}
+
+.room button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* เมื่อนำเข้าไฟล์ CSS นี้ในแอพของคุณ, กรุณาตรวจสอบ URL และไดเรกทอรีที่เกี่ยวข้องเพื่อให้แน่ใจว่าไฟล์ CSS ถูกใช้ในแอพของคุณ */

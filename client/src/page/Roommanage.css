@@ -1,0 +1,86 @@
+/* Roommanage.css */
+
+.room-manage {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 120px;
+  margin-top: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-manage ul {
+  list-style: none;
+  padding: 0;
+}
+
+.room-manage li {
+  margin-bottom: 10px;
+}
+
+.room-manage strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.room-manage br {
+  display: none; /* Optional: Remove line breaks between elements */
+}
+
+/* Define styles for links within the component */
+.room-manage a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Style a:hover for links */
+.room-manage a:hover {
+  text-decoration: underline;
+}
+
+/* Add more styles as needed */
+
+
+/* Roommanage.css */
+
+.centered-container {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลางตามแนวนอน (horizontal) */
+  align-items: center; /* จัดให้อยู่ตรงกลางตามแนวตั้ง (vertical) */
+  margin: 10px;
+}
+
+
+.room-calendar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.room-calendar li {
+  margin-bottom: 10px;
+}
+
+.room-calendar strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.room-calendar br {
+  display: none; /* Optional: Remove line breaks between elements */
+}
+
+/* Define styles for links within the component */
+.room-calendar a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Style a:hover for links */
+.room-calendar a:hover {
+  text-decoration: underline;
+}
+
+/* Add more styles as needed */
