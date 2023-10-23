@@ -11,10 +11,6 @@
   },
   "dependencies": {
     "@ant-design/charts": "^1.4.2",
-    "@mui/core": "5.0.0",
-    "@mui/lab": "5.0.0-alpha.149",
-    "@mui/icons-material": "5.0.0",
-    "@mui/material": "5.0.0",
     "axios": "^1.5.1",
     "exceljs": "^4.3.0",
     "firebase": "^10.5.0",

@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar";
 import axios from "axios";
 import './home.css';
 import { filterData } from './filterUtils';
+import { Column } from '@ant-design/charts'; // เพิ่มการนำเข้า Column จาก Ant Design Charts
 
 function Home() {
   const [dailyBookings, setDailyBookings] = useState([]);
@@ -60,6 +61,18 @@ function Home() {
   // ใช้ฟังก์ชัน filterData เพื่อกรองข้อมูล
   const filteredData = filterData(data, selectedStatus, selectedBranch, selectedRoomStyle);
 
+  // สร้างข้อมูลสำหรับกราฟแท่ง
+  const chartData = Object.keys(dailyBookings).map(name => ({
+    name,
+    value: dailyBookings[name],
+  }));
+
+  const chartConfig = {
+    data: chartData,
+    xField: 'name',
+    yField: 'value',
+  };
+
   return (
     <>
       <Sidebar />
@@ -98,6 +111,9 @@ function Home() {
               </select>
             </div>
 
+            {/* เพิ่มกราฟแท่ง */}
+            <Column {...chartConfig} />
+            
             <table className="booking-table">
               <thead>
                 <tr>
